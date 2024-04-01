@@ -1,0 +1,755 @@
+
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>FastSpring Embedded Test</title>
+    <link rel="shortcut icon" href="https://www.wordrake.com/hubfs/Wordrake%20December2017%20/Images/favicon.ico">
+    <meta name="description" content="">
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="">
+    <meta property="og:title" content="FastSpring Embedded Test">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="FastSpring Embedded Test">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://www.wordrake.com/hs-fs/hub/3365575/hub_generated/template_assets/153855769426/1706617856245/WordRake_Jan_2024/css/main.min.css">
+<link rel="stylesheet" href="https://www.wordrake.com/hs-fs/hub/3365575/hub_generated/template_assets/153854847108/1709808069428/WordRake_Jan_2024/css/theme-overrides.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://www.wordrake.com/hs-fs/hub/3365575/hub_generated/module_assets/154710603429/1707723685776/module_154710603429_header.min.css">
+
+<style>
+  #siteheader{
+    box-shadow: 0px 0.7px 0px #fff;
+    position: relative;
+    display: block;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:24px;
+  }
+  .header-logo {
+    text-align: left;
+  }
+  p.slogan-txt {
+    margin-bottom: 0px;
+    color: #fff;
+    margin-left: 0px;
+    font-family:"Helvetica Neue", Helvetica, "Arial", "Verdana", sans-serif!important;
+    font-weight: 400!important;
+    font-style: italic;
+    letter-spacing: .1em;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px!important; 
+  }
+  @media (max-width:1024px){
+    header#siteheader .container {
+      margin: 0px auto;
+      width:100%!important;
+      max-width:100%;
+    }
+  }
+  header#siteheader nav > ul > li:before {
+    display: none;
+  }
+  header#siteheader nav > ul > li {
+    margin-bottom:0px;
+  }
+  #siteheader nav li a {
+    font-size: 1.4rem!important;
+    text-transform: uppercase;
+    font-weight: 400!important;
+    font-style: normal;
+    font-family:"Helvetica Neue", Helvetica, "Arial", "Verdana", sans-serif!important;
+  }
+  #siteheader nav ul, #siteheader nav{
+    justify-content: flex-end;
+    width:100%;
+  }
+
+  @media  (min-width: 1062px) and (max-width:1200px){
+    #siteheader nav li a {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  @media (min-width:768px){
+    #siteheader nav.desktop {
+      position:relative!important;
+      top:0px!important;
+      display: block !important;
+    }
+    #siteheader nav.mobile {
+      display: none !important;
+    }
+    #siteheader nav ul ul {
+      margin: 0 !important;
+      padding: 20px;
+      width: auto;
+    }
+
+    header#siteheader nav .hs-menu-wrapper>ul ul>li>a {
+      white-space: nowrap;
+    }
+
+    header#siteheader nav .hs-menu-wrapper>ul>li:last-child> ul {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  @media (max-width:1061px){
+    #siteheader .container{
+      justify-content: center;
+      flex-direction: column;
+    }
+    .header-logo {
+      display: inline-block;
+      margin: auto!important;
+      text-align: center;
+    }
+    #siteheader nav ul {
+      margin: 0!important;
+      justify-content: center;
+      margin-top: 10px!important;
+    }
+    #siteheader a img {
+      max-width: 25rem;
+      width: 100%!important;
+      display: block;
+    }
+    #siteheader{
+      padding: 15px 24px;
+    }
+    header#siteheader .container{
+      padding:20px 0px 0px!important;
+    }
+  }
+
+  @media (max-width:767px){
+    header#siteheader .container {
+      display: flex;
+      justify-content: space-between!important;
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    #siteheader .header-logo {
+      margin: auto auto auto 0!important;
+    }
+    #siteheader .menu-trigger{
+      margin-top: 1em!important; 
+    }
+
+    #siteheader nav {
+      width:100%;
+      position: absolute;
+      left:0;
+      top:10.2rem;
+      text-align: center;
+    }
+
+    #siteheader nav ul {
+      margin-top: 0 !important;
+      padding-top: 10px;
+    }
+
+    #siteheader nav ul li a {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    #siteheader nav.desktop {
+      display: none !important;
+    }
+
+    #siteheader nav .child-trigger {
+      display: inline-block;
+    }
+
+    #siteheader nav .hs-menu-wrapper>ul li span.child-trigger {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      cursor: pointer;
+    }
+
+    #siteheader nav .hs-menu-wrapper>ul li {
+      position: relative;
+    }
+
+    #siteheader nav .hs-menu-wrapper>ul li span.child-trigger:after {
+      content: "+";
+      color: inherit;
+      font-size: 2rem;
+    }
+
+    #siteheader nav .hs-menu-wrapper>ul li span.child-trigger.child-open:after {
+      content: '-';
+    }
+
+    #siteheader nav ul ul {
+      display: none;
+    }
+
+  }  
+
+</style>
+
+<link rel="stylesheet" href="https://www.wordrake.com/hs-fs/hub/3365575/hub_generated/module_assets/154711867830/1707735860464/module_154711867830_footer.min.css">
+
+<style>
+  .sitefooter.footer form input[type=submit] {
+    background-color: rgba(255, 255, 255, 0%);
+    color: #fa981d;
+    border-color: #fa981d;
+  }
+  .sitefooter.footer form input[type=submit]:hover,
+  .sitefooter.footer form input[type=submit]:focus,
+  .sitefooter.footer form .hs-button:hover, 
+  .sitefooter.footer form .hs-button:focus {
+    background-color: #fa981d;
+    color: #FFFFFF;
+    border-color: #fa981d;
+  }
+</style>
+
+<!-- Editor Styles -->
+<style id="hs_editor_style" type="text/css">
+/* HubSpot Non-stacked Media Query Styles */
+@media (min-width:768px) {
+  .dnd_area-row-0-vertical-alignment > .row-fluid {
+    display: -ms-flexbox !important;
+    -ms-flex-direction: row;
+    display: flex !important;
+    flex-direction: row;
+  }
+  .dnd_area-column-2-vertical-alignment {
+    display: -ms-flexbox !important;
+    -ms-flex-direction: column !important;
+    -ms-flex-pack: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .dnd_area-column-2-vertical-alignment > div {
+    flex-shrink: 0 !important;
+  }
+}
+</style>
+    
+
+    
+<!--  Added by GoogleAnalytics4 integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+
+  if (useGoogleConsentModeV2) {
+    _hsp.push(['useGoogleConsentModeV2'])
+  } else {
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+      var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+      gtag('consent', 'update', {
+        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+      });
+    }]);
+  }
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-343068894');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-343068894"></script>
+
+<!-- /Added by GoogleAnalytics4 integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    if (useGoogleConsentModeV2) {
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+      });
+
+      _hsp.push(['useGoogleConsentModeV2'])
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGLKWK');
+
+    window._hsGtmLoadOnce = true;
+};
+
+_hsp.push(['addPrivacyConsentListener', function(consent){
+  if(consent.allowed || (consent.categories && consent.categories.analytics)){
+    hsLoadGtm();
+  }
+}]);
+
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="https://www.wordrake.com/fastspring-embedded-test">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MGLKWK');</script>
+<!-- End Google Tag Manager -->
+<!-- Lucky Orange -->
+<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=1bdfc840"></script>
+<!-- End Lucky Orange -->
+<meta property="og:url" content="https://www.wordrake.com/fastspring-embedded-test">
+<script>var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };</script>
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<script id="fsc-api" src="https://sbl.onfastspring.com/sbl/0.9.8/fastspring-builder.min.js" type="text/javascript" data-storefront="wordrake.onfastspring.com/embedded-writing-improvement-software-purchase" data-access-key="YBAPUXJSR9W1M39HTINHFA">
+</script>
+  <meta name="generator" content="HubSpot"></head>
+  <body>
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLKWK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <div class="body-wrapper   hs-content-id-155455483933 hs-site-page page ">
+      
+        <div data-global-resource-path="WordRake_Jan_2024/templates/partials/header.html"><div id="hs_cos_wrapper_header" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><link href="https://www.wordrake.com/hubfs/home%20assets/css/homepage.css?version=69" rel="stylesheet">
+<header id="siteheader">
+  <div class="container">
+    <div class="header-logo">
+      
+      
+      <a href="https://www.wordrake.com">
+        
+        
+        
+        
+        
+        
+        <img src="https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=285&amp;height=18&amp;name=logo.png" alt="logo" loading="lazy" width="285" height="18" style="max-width: 100%; height: auto;" srcset="https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=143&amp;height=9&amp;name=logo.png 143w, https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=285&amp;height=18&amp;name=logo.png 285w, https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=428&amp;height=27&amp;name=logo.png 428w, https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=570&amp;height=36&amp;name=logo.png 570w, https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=713&amp;height=45&amp;name=logo.png 713w, https://www.wordrake.com/hs-fs/hubfs/home%20assets/imgs/logo.png?width=855&amp;height=54&amp;name=logo.png 855w" sizes="(max-width: 285px) 100vw, 285px">
+        
+          <p class="slogan-txt">Edit for clarity in Microsoft Word &amp; Outlook</p>
+        </a>
+    </div>
+    
+    <span class="menu-trigger"><button><span></span></button></span>
+    <nav class="dektop">
+      <span id="hs_cos_wrapper_header_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_header_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="153864144301" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/writing-improvement-software-buy" role="menuitem" target="_blank" rel="noopener">How To Buy</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/software" role="menuitem" target="_blank" rel="noopener">Software</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/editing-software-for-writing-professionals-about" role="menuitem" target="_blank" rel="noopener">About</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/reviews" role="menuitem" target="_blank" rel="noopener">Reviews</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/writing-tips/writing-tips-listing-page" role="menuitem" target="_blank" rel="noopener">Writing Tips</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/main-blog-listing/blog-listing-page" role="menuitem" target="_blank" rel="noopener">Blog</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/editing-software-help" role="menuitem" target="_blank" rel="noopener">Support</a></li>
+ </ul>
+</div></span>
+    </nav>
+    <nav class="mobile">
+      <span id="hs_cos_wrapper_header_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_header_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="153864144301" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/writing-improvement-software-buy" role="menuitem" target="_blank" rel="noopener">How To Buy</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/software" role="menuitem" target="_blank" rel="noopener">Software</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/editing-software-for-writing-professionals-about" role="menuitem" target="_blank" rel="noopener">About</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/reviews" role="menuitem" target="_blank" rel="noopener">Reviews</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/writing-tips/writing-tips-listing-page" role="menuitem" target="_blank" rel="noopener">Writing Tips</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/main-blog-listing/blog-listing-page" role="menuitem" target="_blank" rel="noopener">Blog</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.wordrake.com/editing-software-help" role="menuitem" target="_blank" rel="noopener">Support</a></li>
+ </ul>
+</div></span>
+    </nav>
+    
+  </div>
+</header>
+</div></div>
+      
+
+      
+
+<main id="main-content" class="body-container-wrapper">
+  
+  <div class="container-fluid body-container body-container--home">
+<div class="row-fluid-wrapper">
+<div class="row-fluid">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-vertical-alignment dnd-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell dnd-column dnd_area-column-2-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_dnd_area-module-3" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_dnd_area-module-3_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><script id="fsc-api" src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js" type="text/javascript" data-storefront="yourexamplestore.test.onfastspring.com/embedded">;
+</script></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1709843932102" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div id="buttons">
+<p>Cart Total: <span data-fsc-order-total=""></span></p>
+<p><span data-fsc-item-path="windows-annual-wordrake-for-ms-word-license" data-fsc-item-display=""></span> <button data-fsc-item-path-value="windows-annual-wordrake-for-ms-word-license" data-fsc-action="Add">Add to Cart</button></p>
+<p>Reset Cart <button onclick="fastspring.builder.reset();">Empty Cart</button></p>
+</div>
+
+<div id="fsc-embedded-checkout-container">
+  <!-- Overwrite the skeleton loader -->
+    <iframe id="fsc-embedded-checkout-skeleton-custom" name="fsc-embedded-checkout-skeleton-custom" width="0px" height="0%" frameborder="0" style="display:hidden" src="https://sbl.onfastspring.com/sbl/0.9.8/skeleton.html">
+   </iframe>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div>
+</div>
+</div>
+</main>
+
+
+      
+        <div data-global-resource-path="WordRake_Jan_2024/templates/partials/footer.html"><div id="hs_cos_wrapper_footer" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><footer class="sitefooter footer">
+  <div class="container">
+    <div class="container-wrap">
+      <div class="copryright">
+        <p>© 2024 WordRake, LLC. 8415 154th Avenue NE,&nbsp; Suite 200, Redmond, WA 98052. All rights reserved. <span><a href="https://www.wordrake.com/privacy">Privacy Policy</a> <i>|</i> <a href="https://www.wordrake.com/patents">Technology</a> <i>|</i> <a href="https://www.wordrake.com/contact">Contact</a></span></p>
+      </div>
+      <div class="newsletter-social">
+        <div class="form">
+          <span id="hs_cos_wrapper_footer_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_footer__title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
+
+<div id="hs_form_target_footer_"></div>
+
+
+
+
+
+
+
+
+
+</span>
+        </div>
+        <div class="socials">
+          
+          
+          
+          <a aria-labels="facebook link" href="https://www.facebook.com/WordRake" target="_blank" rel="noopener">
+            
+            
+            
+            
+            
+            
+            <img src="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=32&amp;height=32&amp;name=icon-fb.png" alt="Facebook" loading="lazy" width="32" height="32" style="max-width: 100%; height: auto;" srcset="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=16&amp;height=16&amp;name=icon-fb.png 16w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=32&amp;height=32&amp;name=icon-fb.png 32w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=48&amp;height=48&amp;name=icon-fb.png 48w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=64&amp;height=64&amp;name=icon-fb.png 64w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=80&amp;height=80&amp;name=icon-fb.png 80w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-fb.png?width=96&amp;height=96&amp;name=icon-fb.png 96w" sizes="(max-width: 32px) 100vw, 32px">
+            
+          </a>
+          
+          
+          
+          
+          <a aria-labels="twitter link" href="https://twitter.com/wordrake" target="_blank" rel="noopener">
+            
+            
+            
+            
+            
+            
+            <img src="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=32&amp;height=32&amp;name=icon-twitter.png" alt="Twitter" loading="lazy" width="32" height="32" style="max-width: 100%; height: auto;" srcset="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=16&amp;height=16&amp;name=icon-twitter.png 16w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=32&amp;height=32&amp;name=icon-twitter.png 32w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=48&amp;height=48&amp;name=icon-twitter.png 48w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=64&amp;height=64&amp;name=icon-twitter.png 64w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=80&amp;height=80&amp;name=icon-twitter.png 80w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-twitter.png?width=96&amp;height=96&amp;name=icon-twitter.png 96w" sizes="(max-width: 32px) 100vw, 32px">
+            
+          </a>
+          
+          
+          
+          
+          <a aria-labels="linkedin link" href="https://www.linkedin.com/company/wordrake/" target="_blank" rel="noopener">
+            
+            
+            
+            
+            
+            
+            <img src="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=32&amp;height=32&amp;name=icon-linkedin.png" alt="Linkedin" loading="lazy" width="32" height="32" style="max-width: 100%; height: auto;" srcset="https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=16&amp;height=16&amp;name=icon-linkedin.png 16w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=32&amp;height=32&amp;name=icon-linkedin.png 32w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=48&amp;height=48&amp;name=icon-linkedin.png 48w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=64&amp;height=64&amp;name=icon-linkedin.png 64w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=80&amp;height=80&amp;name=icon-linkedin.png 80w, https://www.wordrake.com/hs-fs/hubfs/WordRake_Jan_2024/Images/icon-linkedin.png?width=96&amp;height=96&amp;name=icon-linkedin.png 96w" sizes="(max-width: 32px) 100vw, 32px">
+            
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div></div>
+      
+    </div>
+    
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://www.wordrake.com/hs-fs/hub/3365575/hub_generated/template_assets/153855769438/1706617851972/WordRake_Jan_2024/js/main.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js"></script>
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+<script data-hs-allowed="true" src="/_hcms/forms/v2.js"></script>
+
+    <script data-hs-allowed="true">
+        var options = {
+            portalId: '3365575',
+            formId: '1bc3b727-430c-4ad1-9bf9-fd500a3eef81',
+            formInstanceId: '3970',
+            pageId: '155455483933',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "FastSpring Embedded Test",
+            
+            
+            
+            inlineMessage: "Thanks for submitting the form.",
+            
+            
+            rawInlineMessage: "Thanks for submitting the form.",
+            
+            
+            hsFormKey: "5d2f4e77d6511943dfd9b6e2ad7bc8cf",
+            
+            
+            deactivateSmartForm: true,
+            
+            css: '',
+            target: '#hs_form_target_footer_',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            useDraft: "true",
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    </script>
+
+
+<!-- Start of HubSpot Analytics Code Not Loaded -->
+<script>
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+</script>
+<!-- End of HubSpot Analytics Code Not Loaded -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "15d2ffef-0a0a-4965-8667-d8633c22609e",
+    ticks: 1711992489918,
+    page_id: 155455483933,
+    
+    content_group_id: 0,
+    portal_id: 3365575,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "155455483933",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.321/js/index.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLKWK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Begin Source Link Script -->
+<script type="text/javascript">
+<!--
+try {
+if (window.location.search != null) {
+  var cookie = ''; var params = ['source','campaign'];
+  for (var i = 0; i < params.length; i++){
+    var srcPos = window.location.search.indexOf(params[i]);
+    if (srcPos != -1) { 
+      var srcStr = window.location.search.substr(srcPos + params[i].length + 1);
+      var srcAmpPos = srcStr.indexOf('&');
+      var srcVal = srcAmpPos != -1 ? srcStr.substring(0, srcAmpPos) : srcStr;
+      var now = new Date(); now.setDate(now.getDate() + 1);
+      document.cookie = params[i] + '=' + escape(srcVal) + ';' + 'expires=' + now.toGMTString() + '; path=/;';
+    }		
+  }
+}
+if (document.cookie != null){
+  var cookiearray = document.cookie.split(';');
+  var append = '';
+  for(var i=0; i<cookiearray.length; i++){
+     var name = cookiearray[i].split('=')[0]; while (name.charAt(0)==' ') name = name.substring(1,name.length);
+     var value = unescape(cookiearray[i].split('=')[1]);
+     if (name == 'source' || name == 'campaign') append = append + (append.length > 0 ? '&' : '') + name + '=' + value;
+  }
+  if (append.length > 0){
+    var links = document.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++){
+      var dom = links[i];
+      if (dom.href.indexOf('sites.fastspring.com') != -1) {
+        var ch = dom.href.indexOf('?') != -1 ? '&' : '?';
+        dom.href = dom.href + ch + append;
+      }
+    }
+    var forms = document.getElementsByTagName("form");
+    for (var i = 0; i < forms.length; i++){
+      var dom = forms[i];
+      if (dom.action.indexOf('sites.fastspring.com') != -1) {
+        var ch = dom.action.indexOf('?') != -1 ? '&' : '?';
+        dom.action = dom.action + ch + append;
+      }
+    }
+  }
+}
+} catch (e){}
+//-->
+</script>
+<!-- End Source Link Script -->
+
+
+    
+      
+    
+  
+</body></html>
