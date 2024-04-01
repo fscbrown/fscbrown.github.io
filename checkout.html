@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <style>
+        body {
+    margin: 0;
+    }
+    /* Sections of Layout
+    -------------------------------------- */
+    /* I named it .grid-container to make it more clear to you which part of the page uses CSS Grid and which doesn't. As usual, the class name could be whatever you like. */
+    .grid-container {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    }
+    @media screen and (min-width: 48em) {
+    .grid-container {
+        max-width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* define the grid */
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 20px;
+    }
+    }
+    @media screen and (max-width: 47.9375em) {
+    .content {
+        margin-bottom: 15px;
+    }
+    }
+    /* Generic styles for demo purposes
+    -------------------------------------- */
+    .content,
+    .footer,
+    .header,
+    .sidebar {
+    background-color: #ccc;
+    padding: 1em;
+    font-family: "Helvetica, Arial, sans-serif";
+    }
+    /* Typically, you wouldn't specify a height or min-height on these, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area and sidebar. But since this example has very minimal content, I've set a min-height to mimic a taller page. */
+    .content {
+    min-height: 350px;
+    }
+    .sidebar {
+    min-height: 200px;
+    }
+</style>
+<script
+    id="fsc-api"
+    src="https://sbl.onfastspring.com/sbl/1.0.0/fastspring-builder.min.js"
+    type="text/javascript"
+    data-storefront="wordrake.test.onfastspring.com/embedded-writing-improvement-software-purchase"
+    data-continuous="true"
+    data-access-key="YBAPUXJSR9W1M39HTINHFA">
+</script>
+</head>
+
+<body>
+  <header class="header">
+    <h4>Wordrake Header</h4>
+  </header>
+  
+  <div class="grid-container">
+    <main class="content">
+    <div id="fsc-embedded-checkout-container">
+    <script type="text/javascript">fastspring.builder.checkout(); </script>
+    </main>
+  
+    <!-- Replace <div> with <aside> if your content has one aside. For more than one, nest <aside> elements in the <div>. -->
+    <div class="sidebar">
+      <h4>Sidebar</h4>
+      <p>Cart Total: <span data-fsc-order-total></span>
+      <p>Reset Cart 
+      <button onclick="fastspring.builder.reset();">Empty Cart</button>
+      </p>
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <p>Footer - About Us - Terms & Conditions</p>
+  </footer>
+</body>
+</html>
